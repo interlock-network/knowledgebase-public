@@ -1,3 +1,3 @@
-# interlock-kb
+# Interlock Knowledge Base
 
-Our knowledge-base.
+This is our wikipedia-like knowledge-base
