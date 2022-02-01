@@ -1,8 +1,8 @@
 # AGPL
 
 An extended GPL license meant for the Cloud Era and SaaS Era.
-It is worded ambiguously, and people still disagree what it means
-(particularly what consititutes derivation). The only real change
+It is worded ambiguously, and people still disagree on what it means
+(particularly what constitutes derivation). The only real change
 from the [GPL](./gpl.md) is that it defines interaction-over-a-network as
 "distribution", which means you must make any _changed_ source available.
 
