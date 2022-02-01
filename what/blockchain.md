@@ -6,7 +6,7 @@ and is updated globally. It depends on consensus between the peers
 to maintain the consistency of its data, which is under threat from
 entropy and malicious actors.
 
-Given that the consensus is expensive, it very slow when compared to
+Given that the consensus is expensive, it is very slow when compared to
 actual transaction-processing systems. The first consensus-mechanism
 depended on [proof-of-work](./proof-of-work.md), in which computers
 solved cryptographic-puzzles to earn the right to broadcast a block
