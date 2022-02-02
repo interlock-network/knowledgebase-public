@@ -1,0 +1,209 @@
+-   Creating Pages & Blog Posts in Prismic
+    -   Pages
+        -   All pages have a `title`, which shows up as the browser tab title, and the website slug, which is the page's unique ID, or `uid`.
+        -   The rest of the page is built from components, or slices, in Prsimic's slice zone. The full list of usable components and examples can be found at [apozy.com/usable-components](http://apozy.com/usable-components), and example setups are in the corresponding page in the Prismic dashboard.
+        -   Tags: In the Prismic dashboard, you can add or create tags for each document. Right now, they are only used for searching the Prismic [Documents view](https://airlock.prismic.io/documents/working/) and retrieving the homepage in NextJS.
+        -   To create a page, click the pencil button in the upper right corner of the [Documents view](https://airlock.prismic.io/documents/working/)
+    -   Blog Posts: uses Blog Post, Author, & Blog Post CTA custom types.
+        -   Blog Post
+            -   Social media sharing links are displayed immediately after the blog post content and are not editable through Prismic.
+            -   Fields:
+                -   Slug - unique post ID, is displayed as [apozy.com/blog/[slug]](http://apozy.com/blog/%5Bslug%5D)
+                -   Featured - boolean. If a post is featured, it will have a bigger card and be displayed before all non-featured posts in the blog home page.
+                -   Image: used for blog cards and blog posts at the top of the page. The image has a regular version (1024px * 640px) that is used for feature-sized cards in the blog homepage, related articles cards, and the actual blog post and a small version (502px *535px) that is used for regular-sized in the blog homepage. Make sure to check the cropping for the small version of the image.
+                -   Title
+                -   Author
+                -   Date
+                -   Content - may add images, links, and format text
+                -   Related Articles - currently must be added manually
+        -   Author
+            -   Authors have a small byline in blog posts and a dedicated section after blog post content.
+            -   [![](https://ci5.googleusercontent.com/proxy/cG2d5yzNZkZiVfmy2Gd1UBLgFEin3TF9KahIBQNkY9a27qGWIyEaPzV1gX-Ty_mkC6itoqNQbY_n50ItibkXXAm09PhhutWkMUed-7LGcKI3-oP875D2Aqdy0cHL-ydZikpws_0OTtDgehCM15MSpfdKJOcGoME6tMzpveH7fjc=s0-d-e1-ft#https://discourse.apozy.us/uploads/default/optimized/1X/07f60beade97a3717813b793a32a75d197226f38_2_331x87.png)](https://discourse.apozy.us/uploads/default/original/1X/07f60beade97a3717813b793a32a75d197226f38.png "xnUFjosVEqpYFy9BiOy4xe71vPg8BWrdlVau5uQoFb9hZv4fgzGvG8FiInQBkWf9ljfA-Wxyfb7mY2YPEwkQABP-q8ay4Ifp2q6kCmtK0WIicjcz1CoUypqM8-s_3WMoXuMKpZ8N.png")
+            -   [![](https://ci5.googleusercontent.com/proxy/bptLjyi8bn2T1nzMVV0iMGslwLlPNXCIZCxo1ex6PdxGd2IQYswY1uRDkjbJz74xutcyfqe3mEyKN23b5GpdXxa9v8kSCc1WSvQe61scEbbX-9xzaM5CSx-7cOPmZl-NWrsZMaOAAV9186UVRjddQwR6pwb8reKMlknOqDxaixo=s0-d-e1-ft#https://discourse.apozy.us/uploads/default/optimized/1X/9ccf3d673ba617a9736ada0c5292641e524312a9_2_424x61.png)](https://discourse.apozy.us/uploads/default/original/1X/9ccf3d673ba617a9736ada0c5292641e524312a9.png "1HLsmJW4jS_yG8bt16aSl7qq0FVVYH2tX-gof59VSFdK50xbFDNaX5M_YDG_SWRlZEwfRb0rKBnVFLZ6l4tapefnnNB8knbLZr1A7-dNMXRYvtR0xDXsdn-NXR7lPqE6bNxQo8xb.png")
+            -   Currently, an Author in Prismic uses only the name & avatar to render the byline and author section.
+            -   Used Fields:
+                -   Name
+                -   Avatar - if no image is assigned, there will not be a default avatar & no image will be shown.
+        -   Blog CTA
+            -   CTA for Apozy website after the author section of a blog post.
+
+                [![](https://ci6.googleusercontent.com/proxy/vN4EBqAZisJuPBWVK552AAz4IVqQdB4uWgEgL3Mykz4dwujKRvrhNJAqGHs9n75OV-XLZMGEdSLo9gea0xzEuCmfyyHQls3pVD_Yg0dFVmNXyZc5uYS3x6LPJju8EZULe_E4UOTlHd6iP6AVkGbgTncnUe_CGCIMnXFohzgp903h=s0-d-e1-ft#https://discourse.apozy.us/uploads/default/optimized/1X/f6f473ba2cc6c527bfcbc7e6c5f842f3d37436a2_2_454x175.png)](https://discourse.apozy.us/uploads/default/original/1X/f6f473ba2cc6c527bfcbc7e6c5f842f3d37436a2.png "mBfY5KMPvj4s4LrvHMseppEJ1E-Vd8xm5Z_ph_5I6y91DDEm04E_X8n7-OwCh0VkW5292_kZ_hksoyE5rRFW4G88OgJtsxM9RrBFFpybaeSfc5xK1QcpIa5ZRopyRAlmzbylNxyb.png")
+
+            -   The Blog Post CTA has its own custom type in Prismic, because it would be redundant to add the same CTA section as a slice or with added fields in a Blog Post type. You can search for the Blog Post CTA by Custom type in the [Documents view](https://airlock.prismic.io/documents/working/) and change the fields accordingly there.
+        -   Fields
+            -   Editor Title - for clarity in Prismic Toolbar
+            -   Editor Description - for clarity in Prismic Toolbar
+            -   Company Bio
+            -   Primary Button Text
+            -   Primary Button Link
+            -   Secondary Button Text
+            -   Secondary Button Link
+-   Changing the Navbar or Footer
+    -   The Apozy website's Navbar consists of the Desktop Menu, Mobile Menu, and Dropdown Menus custom types.
+    -   Desktop Menu
+        -   Contains links for the navbar, not including dropdowns.
+        -   Fields
+            -   Editor Title - for clarity in Prismic Toolbar
+            -   Editor Description - for clarity in Prismic Toolbar
+            -   Logo - appears in the upper left corner of the navbar
+        -   Slices:
+            -   Secondary Nav - Appears in the upper right corner of the navbar.
+                -   Fields
+                    -   Link Text
+                    -   Link
+                    -   Sign Up - boolean. If a secondary nav link is a sign up link, it will be styled differently than the rest of the links in the desktop menu.
+            -   Primary Nav - Appears in the center of the desktop menu. These links contain dropdown containers that are set up in the Dropdown Menus custom type.
+                -   Fields
+                    -   Title
+                    -   Label - this label MUST match the label of the corresponding dropdown menu, or else the dropdown menu will not function.
+    -   The Mobile Menu and Dropdown Menus are both constructed using the method in [this Prismic Guide](https://user-guides.prismic.io/en/articles/2888625-creating-a-3-level-navigation-menu). They have slice zones with slices that have different levels. All slices of level n must be placed under a slice of level n-1.
+        -   You would have a list of slices something like this:
+            -   1st Level (1A)
+            -   2nd level (2A)
+            -   2nd level (2B)
+            -   1st level (1B)
+            -   2nd level (2C)
+            -   2nd level (2D)
+            -   2nd level (2E)
+            -   And so on...
+        -   In the application, these slices would then be parsed and grouped according to the top-most level (1A-2B is one group, 1B-2E is another group).
+        -   There was no way to set levels in the custom type so you must set the level according to the specifications below every time you create a new slice.
+    -   Mobile Menu
+        -   Mobile menu for small screens.
+        -   Editor Title - for clarity in Prismic Toolbar
+        -   Editor Description - for clarity in Prismic Toolbar
+        -   Slices
+            -   Menu Group - displays columns of link lists
+                -   Level - must always be set to 1.
+                -   Title - optional
+                -   Label - must be set to menu_group for parsing
+            -   Link List
+                -   Level - must always be set to 2.
+                    -   Repeatable zone
+                        -   Title
+                        -   Link
+                        -   Coming soon - boolean, adds a "coming soon" label to the link. Currently unused.
+            -   Sign In
+                -   Level - must always be set to 1.
+                -   Link Text
+                -   Link
+                -   Label - must be set to sign_in for parsing
+    -   Dropdown Menus
+        -   Dropdown menus for desktop menu links.
+        -   Editor Title - for clarity in Prismic Toolbar
+        -   Editor Description - for clarity in Prismic Toolbar
+        -   Slices
+            -   Dropdown Container
+                -   Labels (upper left) - default, Float Left, & Active. They don't do anything right now.
+                -   Level - must be set to 1
+                -   Label - must match the label set in Desktop Menu
+            -   Dropdown Group
+                -   Labels: Large Links, Small Links. If no label is set, it does not display the links.
+                -   Level - must always be set to 2.
+                -   Group Title - optional
+                -   Repeatable Zone (for links)
+                    -   Icon - the color of the icon will display as is in the navbar. Should be black.
+                    -   Title
+                    -   Description - optional
+                    -   Link
+                    -   Coming soon - boolean, adds a "coming soon" label to the link. Currently unused & may need a redesign or removal.
+            -   Lists Subgroup - used to display multiple columns of lists of links
+                -   Level - must be set to 3
+            -   List Subgroup - currently used for blog posts. Links open in new tabs. Looks like this:
+                -   [![](https://ci4.googleusercontent.com/proxy/YfDvsi7O6N1tY6b6jYLOo4gdCISfd8lImHBggOIxhDTcWcnujjbGV23G2masMC_A0HkW_ePDP0ka6Pm7ny9iZouxR-eqwSZxBeScsMpQEkvJ6hyMYJLvJaU3PGsQgO6y2ogRcCpYG7R3joI2J19WhPaefToXVw=s0-d-e1-ft#https://discourse.apozy.us/uploads/default/original/1X/6f59d4e4a839a07b2a6d30edf92344050d2278aa.png)](https://discourse.apozy.us/uploads/default/original/1X/6f59d4e4a839a07b2a6d30edf92344050d2278aa.png "ztPRbRRY04uSgQZ_7spZM_TTY8DK-S_l60L-RboopZe6k3EQrAW5ZXjoqoXNL-smitSnjmYYE4VKz-ewJfK5SZHtX9MHe67nBRc8fbuRTA8bAONqIpJWeV-D4F62s9bKU951nxMe.png")
+                -   Level - must be set to 3
+                -   Repeatable Zone
+                    -   Title
+                    -   Link
+            -   List Item - list of links displayed as a column in Lists Subgroup. Could be used for documentation.
+                -   Level - must be set to 4
+                -   Title - optional
+                -   Repeatable Zone:
+                    -   Link Text
+                    -   Link
+    -   Footer
+        -   Contains legal links, social links, and other page links.
+        -   Editor Title - for clarity in Prismic Toolbar
+        -   Editor Description - for clarity in Prismic Toolbar
+        -   Logo - displayed in the upper right corner of the footer
+        -   Slices - for the footer, order of the slices do not matter
+            -   Legal Links - there should only be 1 slice of this type. Shown in lower left corner
+                -   Repeatable Group:
+                    -   Link Text
+                    -   Link
+            -   Social Links - there should only be 1 slice of this type. Shown in lower right corner
+                -   Repeatable group:
+                    -   Image - does not need to be a certain color, filter will be applied.
+                    -   Link
+            -   Nav List
+                -   Title
+                -   Repeatable Zone
+                    -   Link Text
+                    -   Link
+-   Usable components
+    -   Usable components can be viewed in /usable-components
+    -   classes/section classes fields: sets the background color of a section
+        -   Full list of background colors
+            -   bg-contrast-lower
+            -   almost-grey
+            -   almost-black
+            -   purple-grey
+            -   purple-grey-opacity
+            -   purple-grey-opacity-2
+            -   purple-grey-fade
+            -   transparent-darken-1
+            -   transparent-darken-2
+            -   transparent-darken-3
+            -   bg-glass
+            -   bg-transparent
+            -   bg-inherit
+            -   bg
+            -   bg-contrast-lower
+            -   bg-contrast-low
+            -   bg-contrast-medium
+            -   bg-contrast-high
+            -   bg-contrast-higher
+            -   bg-primary-darker
+            -   bg-primary-dark
+            -   bg-primary
+            -   bg-primary-light
+            -   bg-primary-lighter
+            -   bg-accent-darker
+            -   bg-accent-dark
+            -   bg-accent
+            -   bg-accent-light
+            -   bg-accent-lighter
+            -   bg-success-darker
+            -   bg-success-dark
+            -   bg-success
+            -   bg-success-light
+            -   bg-success-lighter
+            -   bg-warning-darker
+            -   bg-warning-dark
+            -   bg-warning
+            -   bg-warning-light
+            -   bg-warning-lighter
+            -   bg-error-darker
+            -   bg-error-dark
+            -   bg-error
+            -   bg-error-light
+            -   bg-error-lighter
+            -   bg-white
+            -   Bg-black
+    -   Component labels offer alternative layouts for a component.
+    -   Feature Lists & Pricing Table - lists are parsed with " | " as a delimiter i.e One | Two shows up like below without the bullet formatting:
+        -   One
+        -   Two
+    -   Currently unused: Hero Diagonal, Diagonal Separator, Animated Cards, Video Modal, Parallax Section
+-   Previewing custom types (Pages, Blog Posts, Blog Post CTA, Desktop Menu, Mobile Menu, Footer, Dropdown Menus)
+    -   To preview new changes, save your changes & click the round eye button next to the Publish button in the upper right hand corner
+    -   Previews are not set up for Author custom types
+-   Todos/enhancements:
+    -   Use small image for related articles
+    -   Generate related articles section based on top 4 of post tags
+    -   Use post tags? & tag section in blog post
+    -   Page for posts under same tag
+    -   dedicated author page like in old blog
+    -   Page of posts sorted by author like in old blog
+    -   Use default avatar if no avatar image found
+    -   Convert classes fields from key text to select fields
