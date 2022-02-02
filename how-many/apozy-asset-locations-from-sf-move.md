@@ -1,3 +1,6 @@
+## Summary
+The location of Apozy owned property after moving from 156 Gilbert Office in SF during the pandemic:
+
 - Fully Desk + 4k LG USB-C Monitor + Arm + Standing mat small
 - Fully desk + Rick’s Asus Monitor + Amazon Monitor Arm + Standing mat small (Chase has it)
 - 2x Herman Miller Chair (Erhan, Chase)
