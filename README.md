@@ -1,9 +1,9 @@
 # Interlock Knowledge Base
 ## Intro
 This is the knowledge-base of the interlock-team. It is vaguely
-wikipedia-like in structure, except instead of wiki-markup we use
-plain-old markdown, which basically everyone who has ever used slack,
-discourse, discord, and github is familiar with.
+Wikipedia-like in structure, except instead of wiki-markup we use
+plain-old markdown, which basically everyone who has ever used Slack,
+Discourse, Discord, and GitHub is familiar with.
 
 We need a place where our team can *easily* access, store, and update
 our knowledge in a way that preserves history and is easily searchable.
@@ -16,7 +16,7 @@ achieve a pseudo-linear presentation by have a linear list of article
 links (as a kind of recommended reading order).
 
 ## Structure
-The most successful knowledge-base on the planet is wikipedia, which has
+The most successful knowledge-base on the planet is Wikipedia, which has
 a flat structure of articles, and uses the web's hyperlinks to create
 connections between them. We are *almost* like that except we do have a
 top-level structure that people can use to find the *kind* of content
@@ -40,12 +40,12 @@ To contribute, you just create and edit markdown-files. You can do this
 in your favorite text editor, or in a markdown-supporting
 knowledge-base-editor like *Obsidian* &mdash; which we are testing out.
 
-Most contributions take on life as *discussions* on Github, and
+Most contributions take on life as *discussions* on GitHub, and
 eventually graduate into the knowledge base as one of more articles.
-Alternatively, an article can be derived from a Github issue. In general
+Alternatively, an article can be derived from a GitHub issue. In general
 contributions and changes should be discussed before they are made.
 
-Also, if you want to use a different markup format supported by github,
+Also, if you want to use a different markup format supported by GitHub,
 you can use org-mode. Obsidian supports org-mode via a plugin.
 
 ## Scope
