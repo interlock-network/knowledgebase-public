@@ -14,3 +14,5 @@ kubernetes. Gitlab's built in orchestration features include:
 - Automated scaffolding of kubernetes instances including routing and metrics (similar to Google https://skaffold.dev/)
 - Uptime monitoring
 - Response escalation
+- Real-time package deployment tracking (which instance has what version package image running)
+- Deployment rollout options (All at once, 10% at a time, manual, etc.)
