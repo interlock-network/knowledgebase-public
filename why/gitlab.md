@@ -1,0 +1,16 @@
+Gitlab is a self-hosted cloud frontend for git version control system.
+
+Historically, we used Gitlab because Github did not offer free private repos and had limited support for CI.
+Since 2020, github has closed the gap on many of Gitlab's main feature advantages around CI, Project Management
+and container registry.
+
+Still, some gaps exist, which is why we still use Gitlab. Specifically, Github is lacking in Orchestration.
+For that, we use Gitlab to mirror our Github repositories, execute piplines, and orchestrate instances in
+kubernetes. Gitlab's built in orchestration features include:
+
+- Incident alerting and monitoring
+- Instance scaling and management
+- Automated management and rotation of SSL certs
+- Automated scaffolding of kubernetes instances including routing and metrics (similar to Google https://skaffold.dev/)
+- Uptime monitoring
+- Response escalation
