@@ -4,7 +4,7 @@ Historically, we used Gitlab because Github did not offer free private repos and
 Since 2020, github has closed the gap on many of Gitlab's main feature advantages around CI, Project Management
 and container registry.
 
-Still, some gaps exist, which is why we still use Gitlab. Specifically, Github is lacking in [GitOps](../what/GitOps.md).
+Still, some gaps exist, which is why we still use Gitlab. Specifically, Github is lacking in [GitOps](../what/gitops.md).
 For that, we use Gitlab to mirror our Github repositories, execute piplines, and orchestrate instances in
 kubernetes. Gitlab's built in orchestration features include:
 
