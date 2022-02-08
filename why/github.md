@@ -1,5 +1,5 @@
 # Github
-Github is a social cloud frontend for git version control system.
+Github is a social cloud frontend for git version control system. It's where we store our code.
 
 We use github for the following reasons:
 - Engaging and aquiring talented engineers socially
