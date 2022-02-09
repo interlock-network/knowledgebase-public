@@ -16,6 +16,7 @@ kubernetes. Gitlab's built in orchestration features include:
 - Response escalation
 - Real-time package deployment tracking (which instance has what version package image running)
 - Deployment rollout options (All at once, 10% at a time, manual, etc.)
+- Package container registry (which is cheaper than Github's storage costs/limits)
 
 By combining GitLab, Kubernetes, and GitOps, it results in a robust infrastructure:
 
