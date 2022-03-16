@@ -9,10 +9,10 @@ We need a place where our team can *easily* access, store, and update
 our knowledge in a way that preserves history and is easily searchable.
 Git handles the history part, and the searchability can be achieved in
 numerous ways thanks for the simplicity of plain-text format. We also
-want a place where can do both linear and non-linear exploration. The
+want a place where we can do both linear and non-linear exploration. The
 articles themselves are linear, but the knowledge-base is non-linear
 since articles are connected via cross-links. Furthermore, one can
-achieve a pseudo-linear presentation by have a linear list of article
+achieve a pseudo-linear presentation by having a linear list of article
 links (as a kind of recommended reading order).
 
 ## Structure
