@@ -7,7 +7,7 @@ Internal terminology will leak externally, and the word sounds sleazy and manipu
 
 Instead we will be exploring terms such as [Connectivism Learning Theory] and others.
 
-Defined per Webster Dictionary as: 
+Gamification is defined per Webster Dictionary as: 
 >The basic concept of gamification isn't new, but the word itself is a 21st-century addition to the English lexicon. 
 The word refers to the incorporation of game elements, like point and reward systems, to tasks as incentives for people to participate. 
 In other words, gamification is about making something potentially tedious into a game. 
