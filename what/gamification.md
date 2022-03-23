@@ -5,7 +5,7 @@
 This term is to never be spoken/written inside company documentation because it trivializes what we do. 
 Internal terminology will leak externally, and the word sounds sleazy and manipulative, as well as belittling -- we should not belittle ourselves.
 
-Instead we will be exploring terms such as [Connectivism Learning Theory] and others.
+Instead we will be exploring terms such as [Connectivism Learning Theory](https://github.com/interlock-network/interlock-kb/blob/67c5b12d4a688843ed24f023665f0afe06862f3a/what/connectivism-learning-theory.md) and others.
 
 Gamification is defined per Webster Dictionary as: 
 >The basic concept of gamification isn't new, but the word itself is a 21st-century addition to the English lexicon. 
