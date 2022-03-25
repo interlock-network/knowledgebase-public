@@ -27,3 +27,5 @@ This article contains all the notes for each meeting. In order to view them, you
 ###### 2022-03-18 (F) [Notes](https://coda.io/d/_d7tg7IvQLdA/3-18-Fri_suuTN)
 
 ###### 2022-03-21 (M) [Notes](https://coda.io/d/_d7tg7IvQLdA/3-21-Mon_suyHZ)
+
+###### 2022-03-25 (F) [Notes](https://coda.io/d/_d7tg7IvQLdA/3-25-Fri_suXZ4)
