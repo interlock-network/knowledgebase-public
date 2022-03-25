@@ -15,4 +15,4 @@ Monday @ 3:30 p.m. EST
 **Sync Meeting** 
 Friday @ 4:00 p.m. EST 
 
-We keep notes from each meeting [here](../what/weekly-team-meeting.md).
+We keep notes from each meeting [here](../what/weekly-team-meeting-notes.md).
