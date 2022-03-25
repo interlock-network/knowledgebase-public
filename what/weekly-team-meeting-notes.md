@@ -2,7 +2,7 @@
 
 We have standup meetings on Mondays and a team sync meeting on Fridays.
 
-This article contains all the notes for each meeting.
+This article contains all the notes for each meeting. In order to view them, you will be directed to a Coda page where you will prompted to login if you haven't already.
 
 ###### 2022-02-11 (F) [Notes](https://coda.io/d/_d7tg7IvQLdA/2-11-Fri_su4oe) 
 
