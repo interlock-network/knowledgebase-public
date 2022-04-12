@@ -85,7 +85,7 @@ Geth will now be available from the command prompt.
 <summary>&emsp;Ubuntu</summary>
 &emsp;
 
-Use ```apt-get``` to install geth:
+Use `apt-get` to install geth:
 ```
 sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
@@ -142,7 +142,7 @@ And simple as that, this should be enough to have access to geth and other utili
 
 ------------------
 
-Verify the install by running ```geth version``` in a terminal, which should return something like this:
+Verify the install by running `geth version` in a terminal, which should return something like this:
 ```
 blairmunroakusa$ geth version
  Geth
@@ -175,7 +175,7 @@ We will be using a tool (CLI wizard) called puppeth, which typically bundles wit
 
 **This section is the same for all systems.**
 
-Create a new blockchain space on your machine, create a new subspace for the genesis node, then run ```puppeth``` from the blockchain space:
+Create a new blockchain space on your machine, create a new subspace for the genesis node, then run `puppeth` from the blockchain space:
 ```
 mkdir interlockdev-ethereum
 cd interlockdev-ethereum
@@ -265,14 +265,14 @@ Export config for new genesis block:
 > 2
 ```
 
-And finally, save to ```interlockdev-ethereum``` directory:
+And finally, save to `interlockdev-ethereum` directory:
 ```
 Which folder to save the genesis specs into? (default = current)
 >
 (no selection is default)
 ```
 
-Okay cool. Our blockchain genesis block is setup. Exit out of ```puppeth```. Your ```interlockdev-ethereum``` directory should look like the following:
+Okay cool. Our blockchain genesis block is setup. Exit out of `puppeth`. Your `interlockdev-ethereum` directory should look like the following:
 ```
  devnode1
  interlockdev-aleth.json
@@ -298,9 +298,9 @@ Okay cool. Our blockchain genesis block is setup. Exit out of ```puppeth```. You
 
 **Running the new blockchain is essentially the same for all systems:**
 
-We start by initializing a single node. This ```init``` command will create a ```keystore``` directory for private keys, and a ```geth``` (containing ```chaindata```) directory for general blockchain and node data. We will be setting up ```devnode1``` as the primary node that runs the blockchain.
+We start by initializing a single node. This `init` command will create a `keystore` directory for private keys, and a `geth` (containing `chaindata`) directory for general blockchain and node data. We will be setting up `devnode1` as the primary node that runs the blockchain.
 
-From ```interlockdev-ethereum``` run:
+From `interlockdev-ethereum` run:
 ```
 geth --datadir devnode1 init interlockdev.json
 ```
@@ -309,12 +309,12 @@ Now we need to create an account that represents this node. This is the default 
 
 >_The etherbase or coinbase is the account that mining proceeds are deposited in._
 
-From ```interlockdev-ethereum``` run:
+From `interlockdev-ethereum` run:
 ```
 geth --datadir devnode1 account new
 ```
 
-Create a password as prompted (remember it), and copy the account address for future reference. Mine is ```0x2402c3fe2f60e3cdc951c61450dd0c80aa0baeb5```. Save the password in a file within ```devnode1``` directory:
+Create a password as prompted (remember it), and copy the account address for future reference. Mine is `0x2402c3fe2f60e3cdc951c61450dd0c80aa0baeb5`. Save the password in a file within `devnode1` directory:
 
 For macOS, Ubuntu, Debian, Nix:
 ```
@@ -326,7 +326,7 @@ For Windows:
 echo mypastedpassword> devnode1\password.sec
 ```
 
-Your ```devnode1``` directory should now contain the following:
+Your `devnode1` directory should now contain the following:
 ```
  geth
  keystore
@@ -335,9 +335,9 @@ Your ```devnode1``` directory should now contain the following:
 
 OK
 
-It's time to fire up the blockchain, originating at ```devnode1```.
+It's time to fire up the blockchain, originating at `devnode1`.
 
-From ```interlockdev-ethereum``` run the following on macOS, Ubuntu, Debian, Nix:
+From `interlockdev-ethereum` run the following on macOS, Ubuntu, Debian, Nix:
 ```
 geth --networkid 1234 --mine --miner.threads 1 --http.api web3,eth,personal,net --unlock 0 --nodiscover --datadir devnode1 --password devnode1/password.sec --ipcpath devnode1/geth.ipc
 ```
@@ -463,7 +463,7 @@ In a future article, we will review how to set up additional nodes on a private 
 
 . All OS implementations were tested; if you can't make this work you're probably doing something wrong.
 
-. Drop ```--nodiscover``` flag from blockchain startup if you want your chain available to mystery network peers.
+. Drop `--nodiscover` flag from blockchain startup if you want your chain available to mystery network peers.
 
 . And disregarding the nontrivial task of rebranding, literally that is how easy it is to create a new Ethereum blockchain. Call yours what you will. My local chain is called **hyperbloX**, with a capital X.
 
