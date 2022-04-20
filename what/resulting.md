@@ -10,4 +10,4 @@ failing, the course of action was not _bad_. It was actually good (90% good).
 If one categorizes the course of action as inherently _bad_, then
 they are _resulting_.
 
-#DecisionMaking #Gambling #Statistics #Modeling #Uncertainty
+`#DecisionMaking` `#Gambling` `#Statistics` `#Modeling` `#Uncertainty`

@@ -16,4 +16,4 @@ a list of who owns what.
 
 Crypto-currencies can be considered as digital Rai Stones -- the value is in the ledger not the actual artifacts.
 
-#Analogies #OldSchoolCrypto #Money #Anthropology
+`#Analogies` `#OldSchoolCrypto` `#Money` `#Anthropology`
