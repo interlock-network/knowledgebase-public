@@ -23,12 +23,12 @@ top-level structure that people can use to find the *kind* of content
 they are looking for.
 
 We structure the articles in the knowledge-base, via
-interrogative-correlatives such as [ who ]( who/README.md),
-[ what ](what/README.md), [ where ]( where/README.md), 
-[ when ]( when/README.md),[ why ]( why/README.md), 
-[ which ]( which/README.md), [ whither ](whither/README.md), 
-[ whose ]( whose/README.md),[ how ](how/README.md), 
-[ how-many ]( how-many/README.md), and
+interrogative-correlatives such as [ who ](who/README.md),
+[ what ](what/README.md), [ where ](where/README.md), 
+[ when ](when/README.md),[ why ](why/README.md), 
+[ which ](which/README.md), [ whither ](whither/README.md), 
+[ whose ](whose/README.md),[ how ](how/README.md), 
+[ how-many ](how-many/README.md), and
 [ what-kind-of ](what-kind-of/README.md). This lets people easily search for descriptions
 of something (i.e. like our extension) in the  ` what `  directory, for
 tutorials about things (i.e. like how to install or test or merge our
