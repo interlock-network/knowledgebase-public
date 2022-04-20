@@ -1,4 +1,4 @@
-# Linkbot
+# Linkbot #
 
 This file is for describing what the Linkbot is. "Linkbot" is a working name. It is explained in more detail in the [Linkbot repo](https://github.com/interlock-network/linkbot).
 

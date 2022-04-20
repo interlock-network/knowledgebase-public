@@ -1,5 +1,3 @@
-<!-- @format -->
-
 [Coinspect](https://www.coinspect.com/smart-contract-audit/) is a potential auditor for us.
 
 `Our team has performed more than 100 smart contract audits since 2017. The most recent audits with publicly available reports include Vesper, Aragon, and Liquity.`
