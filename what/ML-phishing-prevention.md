@@ -1,0 +1,22 @@
+#### This document links to articles about using machine learning (ML) to identify phishing attacks
+
+#### 1. [arXiv publication]
+[_Email Summarization to Assist Users in Phishing Identification, Amir Kashapov et al_](https://arxiv.org/pdf/2203.13380.pdf) .
+For general audience, review the more accessible Tech Xplore article [_A model that can help inexperienced users identify phishing emails_](https://techxplore.com/news/2022-04-inexperienced-users-phishing-emails.html) .
+
+
+>PUBLICATION ABSTRACT:
+> 
+>Cyber-phishing attacks recently became more precise, targeted, and
+tailored by training data to activate only in the presence of specific information or cues. They are adaptable to a much greater
+extent than traditional phishing detection. Hence, automated detection systems cannot always be 100% accurate, increasing the
+uncertainty around expected behavior when faced with a potential phishing email. On the other hand, human-centric defence approaches focus extensively on user training but face the difficulty
+of keeping users up to date with continuously emerging patterns.
+Therefore, advances in analyzing the content of an email in novel
+ways along with summarizing the most pertinent content to the
+recipients of emails is a prospective gateway to furthering how
+to combat these threats. Addressing this gap, this work leverages
+transformer-based machine learning to (i) analyze prospective psychological triggers, to (ii) detect possible malicious intent, and to
+(iii) create representative summaries of emails. We then amalgamate this information and present it to the user to allow them to
+(i) easily decide whether the email is “phishy” and (ii) self-learn
+advanced malicious patterns.This publication outlines ML research on identifying phishing attacks for inexperienced users.
