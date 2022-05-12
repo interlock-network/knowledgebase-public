@@ -4,7 +4,9 @@
 
 `We are proud to be the largest community of smart contract auditors and blockchain security experts. That expertise provides us the unique perspective to perform the most secure audits and deep research of up-and-coming crypto startups.`
 
-They are based in Germany and have about 30 auditors around the world, including some economists! They only work with legal entities, and do due diligence on their potential customers to avoid rug pulls. 
+They are based in Germany and have about 30 auditors around the world, including some economists! They only work with legal entities, and do due diligence on their potential customers to avoid rug pulls.
+
+Additionally, Solidified is very selective about the quality of code they choose to audit. If the code has an abundance of blatant errors, they will be likely to refuse the audit.
 
 ### Process
 
@@ -19,6 +21,8 @@ Before beginning we sign a mutual NDA. Then we send them everything we can to he
 They assign two or three auditors per product. Those auditors have specific steps they follow, but are allowed a lot of independence, too. The price is $10K / auditor / work week. (Auditors usually work less than a full 40-hour week on any given project in a week.) The simplest token audit has been around $10K total. Most DeFi projects end up being between $40K - $50K.
 
 Each auditor works independently until the findings meeting. They are then available for three weeks after the findings to ensure that any fixes work as expected.
+
+After receiving a quote and signing an agreement, Solidified requires a 50% down deposit, with the final 50% due after the three week post-audit window. If actual audit time goes under or over quote, they are flexible and will communicate to resolve differences.
 
 ### Result
 
