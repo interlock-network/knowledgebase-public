@@ -4,25 +4,25 @@
 - Apply all checks: Readability in Light Mode
 - Apply all checks: Readability in Dark Mode
 - Apply all checks: Mobile views are usable and easy to navigate, try to avoid horizontal scrolling.
-- Apply all checks: Using network throttling to simulate slow loading and ensure loading states on long / slow apis are obvious
+- Apply all checks: Using network throttling to simulate slow loading and ensure loading states on long / slow apis are obvious.
 - Menus are appropriate and work in mobile and desktop.
-- Clicking every button works as expected
+- Clicking every button works as expected.
 - Page state is saved as expected after refreshing a page. For example, changing number of total items in a table and refreshing the page remembers the number of items shown. This should be true for all user-selectable view preferences.
-- Spacing and alignment is consistent and event
+- Spacing and alignment is consistent and even.
 - Success actions are clear and easy to associate with the action-at-hand.
 - Error actions are clear and easy to associate with the action-at-hand.
 - Inputs correctly handle unexpected input and appropriate input length.
 - Click-spamming a button or action does not break anything. For example, clicking the ‘Save’ button as fast as you can.
-- Confusing items all have appropriate tooltips
+- Confusing items all have appropriate tooltips.
 - When a list or page has no items, a friendly empty-state display is shown (check in both light vs dark).
 - All important actions (saving settings, blocking a person, adding a group…etc) create an appropriate Activity Notification.
-- Components look consistent across pages (button sizes, color, shadows, etc)
+- Components look consistent across pages (button sizes, color, shadows, etc).
 - Animations are smooth
 - Visual weight is appropriate between items and overall page focuses attention on most relevant parts first with size and color distinction (visual hierarchy).
-- Top menu has group names properly selected on each group page
-- Side navigation pages are properly highlighted for the selected group page
+- Top menu has group names properly selected on each group page.
+- Side navigation pages are properly highlighted for the selected group page.
 - Page titles are correct for every page.
 - Sorting on all table components works as expected.
-- Default sort order for table components are correct for data shown
-- Sidebar counters update properly (when an alert is opened or closed) in sidebar nav
+- Default sort order for table components are correct for data shown.
+- Sidebar counters update properly (when an alert is opened or closed) in sidebar nav.
 - Opening a drop-down menu properly shows the current selection with a check mark next to it.
