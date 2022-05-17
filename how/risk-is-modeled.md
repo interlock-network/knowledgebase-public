@@ -18,8 +18,8 @@ The funnel would consist of the following stages:
 ```
 ------------ PEOPLE -------------
   -------- REACHABILITY -------
-    -----    EXPOSURE --------
-      ---- SUCEPTIBILITY --
+    ------  EXPOSURE --------
+      --  SUSCEPTIBILITY --
        ------ RISK ------
            ---PWN---
 ```
@@ -67,7 +67,7 @@ This is the behavior of a person on the site that would lead to a breach,
 if the site were malicious. For example, did they click a link, fill out a
 form, upload or download a file. Traditional phishing simulation did this
 with JUST email, we can do it with sites, adverts, or sampling through our
-extension or integration with phishing campaign tools. Even tracking
+extension or integration with phishing campaign tools; even tracking
 downloads and form submissions could be sufficient.
 
 Actionable Insight: High susceptibility requires strategic blocking and
@@ -86,10 +86,11 @@ viable access.
 Someone got owned.
 
 Actionable Insight: Requires incident response and investigation.
-Foreward
+
+**Foreward**
 
 As a segue into BI the tracking of cloud service usage, duration and
 activity could enable us to sell to companies wanting to improve their
 products or understand engagement. Traditional proxies cannot track this
 data. We can actually compute this on the backend by analyzing navigation
-history or we can track it separately
+history or we can track it separately.
