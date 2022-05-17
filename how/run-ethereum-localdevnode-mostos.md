@@ -5,11 +5,11 @@ TODO:
 . extend for centOS / RHEL
 ```
 
-# overview
+# Overview
 
 This guide is intended for operators (users) running Windows, macOS, and linux (Ubuntu, Debian, and Nix).
 
-To use this guide, you must know how the terminal on your machine.
+To use this guide, you must know the terminal on your machine.
 
 The purpose of this guide is to install a bare-bones local Ethereum development node. Barebones means that we will not be using a framework like Hardhat or Truffle.
 
@@ -42,7 +42,7 @@ Finally, we will do some stuff to flex a little.
 
 
 
-# 1. get geth
+# 1. Get geth
 <details>
 <summary markdown="span">expand</summary>
 &emsp;
@@ -154,7 +154,7 @@ blairmunroakusa$ geth version
  GOROOT=go
 ```
 
-And this is geth. With this tool installed, we can not only manipulate a local dev node, but we can also connect and interact with the Ethereum mainnet, accounts, smartcontracts, etc.
+And this is geth. With this tool installed, we can manipulate a local dev node, and we can also connect and interact with the Ethereum mainnet, accounts, smartcontracts, etc.
 
 </details>
 &emsp;
@@ -164,7 +164,7 @@ And this is geth. With this tool installed, we can not only manipulate a local d
 
 
 
-# 2. setup new blockchain
+# 2. Setup new blockchain
 <details>
 <summary>expand</summary>
 &emsp;
@@ -291,7 +291,7 @@ Okay cool. Our blockchain genesis block is setup. Exit out of `puppeth`. Your `i
 
 
 
-# 3. run new blockchain with local devnode
+# 3. Run new blockchain with local devnode
 <details>
 <summary>expand</summary>
 &emsp;
@@ -374,7 +374,7 @@ Now it's time to...
 
 
 
-# 4. connect to node with client and do some stuff
+# 4. Connect to node with client and do some stuff
 <details>
 <summary>expand</summary>
 &emsp;
@@ -449,19 +449,19 @@ The long hex number is the transaction hash.
 
 
 
-# 5. outro
+# 5. Outro
 
 And that's that. If you haven't gotten lost, you just configured a private Ethereum blockchain and got it running with a single local dev node on your machine.
 
 In a future article, we will review how to set up additional nodes on a private Ethereum dev blockchain.
 
-# sequel, tidbits
+# Sequel & tidbits
 
 . [visit official go-ethereum docs here](https://geth.ethereum.org)
 
 . [web3 Ethereum API docs](https://web3js.readthedocs.io/en/v1.7.1/)
 
-. All OS implementations were tested; if you can't make this work you're probably doing something wrong.
+. All OS implementations were tested; if you can't make this work you're most likely doing something wrong. Please reach out for any answers to your questions. 
 
 . Drop `--nodiscover` flag from blockchain startup if you want your chain available to mystery network peers.
 
