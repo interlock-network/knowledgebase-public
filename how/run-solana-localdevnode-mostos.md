@@ -5,13 +5,13 @@ TODO:
 . figure hack to extend to Nix
 ```
 
-# overview
+# Overview
 
 This guide is intended for operators (users) running Windows, macOS, and linux (Ubuntu, Debian, and CentOS/RHEL).
 
 The purpose of this guide is to install a local Solana development node. 
 
-First we will install the Solana CLI toolset.
+First, we will install the Solana CLI toolset.
 
 As with any blockchain, running a node on mainnet or even testnet is expensive in terms of discspace, and we have to use real sol, or adhere to airdrop limits, so we will focus on a local development node, which allows a lot more freedom.
 
@@ -25,27 +25,27 @@ Finally, we will do some stuff to flex a little.
 
 **Thus the order of operations will go like this:**
 
-1. get solana CLI
+1. Get solana CLI
 
-2. configure and setup
+2. Configure and setup
 
-3. run new blockchain with local devnode
+3. Run new blockchain with local devnode
 
-4. do some stuff with CLI tools
+4. Do some stuff with CLI tools
 
-5. outro
-
-
+5. Outro
 
 
 
 
-# 1. get solana CLI
+
+
+# 1. Get solana CLI
 <details>
 <summary markdown="span">expand</summary>
 &emsp;
 
-First we need solana.
+First, we need solana.
 
 Choose your operating system:
 
@@ -104,7 +104,7 @@ wsl -d kali-linux
 
 Once you are in, ```cd``` to user home directory (```wsl``` by default creates a Windows mount to the Kali OS, awkward).
 
-Now we can proceed to install Solana CLI. Part of the reason why Kali is better in this case is that we don't need to fiddle with getting ```curl```. If I am wrong, then you need to ```sudo apt install curl```.
+Now, we can proceed to install Solana CLI. Part of the reason why Kali is better in this case is that we don't need to fiddle with getting ```curl```. If I am wrong, then you need to ```sudo apt install curl```.
 
 Get Solana CLI:
 ```
@@ -152,7 +152,7 @@ blairmunroakusa$ solana --version
 
 
 
-# 2. configure and setup
+# 2. Configure and setup
 <details>
 <summary>expand</summary>
 &emsp;
@@ -161,7 +161,7 @@ Solana is easier to configure a new local blockchain. This local node is a _loca
 
 **This section is the same for all systems.**
 
-First we need to configure the CLI url to the localhost:
+First, we need to configure the CLI url to the localhost:
 ```
 solana config set --url localhost
 ```
@@ -176,7 +176,7 @@ blairmunroakusa$ solana config get
  Commitment: confirmed
 ```
 
-Next you will notice from the ```get``` above that we have a ```Keypair Path``` we need to tend to.
+Next, you will notice from the ```get``` above that we have a ```Keypair Path``` we need to tend to.
 
 We need to generate a keypair for your main account on this particular node/cluster. This account is **_owned_** by the system program, but you have the **_authority_** over the account provided by your possession of the private key used to generate the public key account address. In Solana, all accounts are owned by **_programs_**. A program is equivalent to a **_smart contract_** in Ethereum. By default, all accounts are owned by the **_system program_**. Think of the system program like the master smart contract.
 
@@ -187,7 +187,7 @@ Run:
 solana-keygen new
 ```
 
-Now the id.json file in the Solana .config directory will contain the pub/pri key for your 'machine's id'. You can use this keypair for all future testnet/localnet dev work you do. You cannot use this keypair with real SOL. For that, you need a proper account on mainnet-beta.
+Now, the id.json file in the Solana .config directory will contain the pub/pri key for your 'machine's id'. You can use this keypair for all future testnet/localnet dev work you do. You cannot use this keypair with real SOL. For that, you need a proper account on mainnet-beta.
 
 The prikey is stored in the id.json, so it will be convenient to write the pubkey down somewhere easy for future reference.
 
@@ -207,7 +207,7 @@ Ok cool. Ready to rock.
 
 
 
-# 3. run new blockchain with local devnode
+# 3. Run new blockchain with local devnode
 <details>
 <summary>expand</summary>
 &emsp;
@@ -219,7 +219,7 @@ Running the node is as easy as:
 solana-test-validator
 ```
 
-But not so fast, Windows user. First we need to install ```bzip2```:
+But not so fast, Windows user. First, we need to install ```bzip2```:
 ```
 sudo apt install bzip2
 ```
@@ -256,7 +256,7 @@ blairmunroakusa$ solana-test-validator
 
 
 
-# 4. do some stuff with CLI tools
+# 4. Do some stuff with CLI tools
 <details>
 <summary>expand</summary>
 &emsp;
@@ -300,7 +300,7 @@ It should be noted that most chain manipulation is done with the web3 API. The C
 
 
 
-# 5. outro
+# 5. Outro
 
 And that's that. If you haven't gotten lost, you just configured a private Solana blockchain and got it running with a single local dev node on your machine.
 
