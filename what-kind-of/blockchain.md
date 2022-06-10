@@ -1,4 +1,4 @@
-## Blockchain 
+## What kind of Blockchain is Interlock building with?
 
 A blockchain in the simplest terms is a system where transactions made on a cryptocurrency can be maintained across multiple computers that are 
 linked in some form of a peer-to-peer network. Interlock Network is built on top of the Solana and Ethereum blockchains. We will provide public files with 
