@@ -4,9 +4,9 @@
 
 The purpose of the template is to show you how to create a comprehensive Solana smart contract, known in the Solana world as a **_program_**.
 
-This template **does not rely on any frameworks, such as Anchor**. From a engineering durability standpoint this is good, because the documentation for Solana frameworks is ..not the best, and besides, black boxes run more risk for potentially exploitable 'undocumented features'.
+This template **does not rely on any frameworks, such as Anchor**. From an engineering durability standpoint this is good, because the documentation for Solana frameworks is ..not the best, and besides, black boxes run more risk for potentially exploitable 'undocumented features'.
 
-The template contains enough code to present a compiling program that demonstrates the minimum main inner workings of a Solana program, but without getting into specific tasks.
+This template contains enough code to present a compiling program that demonstrates the minimum main inner workings of a Solana program, but without getting into specific tasks.
 
 The program itself contains references to fictitious accounts provided by the client, so unless those are accounted for, instructionOne will throw an error.
 
@@ -18,7 +18,7 @@ a complex Solana program should be broken into five main modules, plus utilities
 
 1. **entrypoint**
 2. **processor**
-3. **intruction**
+3. **instruction**
 4. **state**
 5. **error**
 
@@ -57,13 +57,13 @@ which in typical fashion are linked together via
 
 ## Resources
 
-For a smaller version of this template format, but a more complete demonstration of a end-to-end fully functioning Solana program, [check out PaulX Programming on Solana - An Introduction, Escrow Program](https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/).
+For a smaller version of this template format, but a more complete demonstration of an end-to-end fully functioning Solana program, [check out PaulX Programming on Solana - An Introduction, Escrow Program](https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/).
 
 For a hello world, but not best-practice structuring, [check out the Solana Labs Hello World Example](https://github.com/solana-labs/example-helloworld).
 
 [The Solana cookbook is here.](https://solanacookbook.com)
 
-[The Solana docs are here.](https://solanacookbook.com)
+[The Solana docs are here.](https://docs.solana.com/introduction)
 
 [Solana-program Rust docs are here.](https://docs.rs/solana-program/latest/solana_program/)
 
