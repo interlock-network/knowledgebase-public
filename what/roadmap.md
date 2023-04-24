@@ -1,3 +1,3 @@
 ## Interlock Roadmap 
 
-![Interlock_Timeline](https://user-images.githubusercontent.com/95258773/212791215-cf0f4e86-df4a-402c-ac53-c11a4d996163.png)
+![Interlock Timeline](https://user-images.githubusercontent.com/95258773/233697701-a517e453-cccb-4fc6-9468-7daf3c89faa6.jpeg)
