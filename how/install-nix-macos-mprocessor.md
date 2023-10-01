@@ -1,7 +1,8 @@
 # How to install nix on M1 mac computer?
 
-_Created: 10/30/23
-_Last updated: 10/30/23
+_Created: 10/30/23_
+
+_Last updated: 10/30/23_
 
 ## Problem overview
 
@@ -53,11 +54,13 @@ extra-platforms = x86_64-darwin aarch64-darwin
 ```
 Save and exit file.
 
-Finally, get cache info for nix store.
+Get cache info for nix store.
 
 ```
 curl cache.iog.io/nix-cache-info
 ```
+
+And don't forget to add `/nix` to your environment path.
 
 ## That is it
 
