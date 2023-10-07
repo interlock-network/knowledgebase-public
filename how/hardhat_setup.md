@@ -15,3 +15,10 @@ Go here and follow tutorial:
 .
 
 .
+
+# Notes and Troubleshooting
+
+- Be warned with instructions, the `init` operation may may the entire directory and contents only accessible to `root`. Interlock Network (Blair c.2023) does not know why nor does care. Fix it with this:
+```
+sudo chown -R <yourprofile>:<yourgroup> *
+```
